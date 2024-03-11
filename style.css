@@ -5,6 +5,11 @@
 }
 
 @font-face {
+	font-family: 'Poppins-Regular';
+	src: url(fonts/Poppins-Regular.ttf) format('truetype');
+}
+
+@font-face {
 	font-family: 'Poppins-Bold';
 	src: url(fonts/Poppins-Bold.ttf) format('truetype') ;
 }
@@ -84,8 +89,9 @@ main {
 }
 
 .inputsDiv p {
+	font-family: 'Poppins-Regular', Arial, sans-serif;
 	font-size: 10px;
-	margin: 2px 0px 0px 5px;
+	margin: 3px 0px 0px 5px;
 	color: red;
 }
 
