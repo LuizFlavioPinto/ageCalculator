@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<main>
+
+		<div class="inputsDiv">
+			<div class="dayDiv">
+				<label for="dayInput">Day</label>
+				<input type="text" pattern="[0-9]" id='dayInput' name="dayInput" required>
+				<p class="hidden">Must be a valid day</p>
+			</div>
+
+			<div class="monthDiv">
+				<label for="monthInput">Month</label>
+				<input type="text" pattern="[0-9]" id='monthInput' name="monthInput" required>
+				<p class="hidden">Must be a valid month</p>
+			</div>
+
+			<div class="yearDiv">
+				<label for="dayInput">Year</label>
+				<input type="text" pattern="[0-9]" id='yearInput' name="yearInput" required>
+				<p class="hidden">Must be a valid year</p>
+			</div>
+
+		</div>
+
+
+		<button onclick="execute(dateInputValues[0],dateInputValues[1],dateInputValues[2])"></button>
+
+
+		<div class="resultsDiv">
+			<div class="yearResult">
+				<p class="resultOutput">--</p>
+				<p class="outputName">years</p>
+
+			</div>
+
+
+			<div class="monthResult">
+				<p class="resultOutput">--</p>
+				<p class="outputName">months</p>
+			</div>
+
+
+			<div class="dayResult">
+				<p class="resultOutput">--</p>
+				<p class="outputName">days</p>
+			</div>
+		</div>
+		
+
+
+
+
+	</main>
+
+	
+	
+		
+
+
+		
+
+		
+
+
+</body>
+
+	<script src="script.js"></script>
+
+</html>

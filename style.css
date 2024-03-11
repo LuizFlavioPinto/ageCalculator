@@ -1,0 +1,149 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+@font-face {
+	font-family: 'Poppins-Bold';
+	src: url(fonts/Poppins-Bold.ttf) format('truetype') ;
+}
+
+@font-face {
+	font-family: 'Poppins-ExtraBoldItalic';
+	src: url(fonts/Poppins-ExtraBoldItalic.ttf) format('truetype') ;
+}
+
+@font-face {
+	font-family: 'Poppins-ExtraBold';
+	src: url(fonts/Poppins-ExtraBold.ttf) format('truetype') ;
+}
+
+
+@font-face {
+	font-family: 'Poppins-BoldItalic';
+	src: url(fonts/Poppins-BoldItalic.ttf) format('truetype') ;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: hsl(0, 0%, 94%);
+}
+
+
+main {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 550px;
+	background-color: #ffffff;
+	padding: 40px;
+	border-radius: 15px 15px 150px 15px;
+	margin: 20px;
+	box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);
+}
+
+.inputsDiv {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	padding-bottom: 50px;
+	border-bottom: 2px solid rgb(0, 0, 0, 0.1);
+}
+
+.inputsDiv > div {
+	width: 25%;
+	margin-right: 20px;
+}
+
+.inputsDiv label {
+	width: 100%;
+	display: block;
+	font-size: 14px;
+	font-family: "Poppins-Bold", Arial, sans-serif;
+	color: #aaaaaa;
+}
+
+.inputsDiv input {
+	all: unset;
+	font-family: 'Poppins-Bold', Arial, sans-serif;
+	border-radius: 5px;
+	width: 100%;
+	height: 40px;
+	margin-top: 8px;
+	border: 1.5px solid rgb(0, 0, 0, 0.2);
+	padding: 2px 2px 2px 15px;
+	font-size: 18px;
+}
+
+.inputsDiv input:focus {
+	border-color: hsl(259, 100%, 65%);
+}
+
+.inputsDiv p {
+	font-size: 10px;
+	margin: 2px 0px 0px 5px;
+	color: red;
+}
+
+.show {
+	visibility: visible;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+button {
+	border: none;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: hsl(259, 100%, 65%);
+	transform: translateY(-35px);
+	box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+	background-image: url('images/icon-arrow.svg');
+	background-size: 30px;
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+button:hover{
+	background-color: black;
+	cursor: pointer;
+}
+
+.resultsDiv {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.resultsDiv > div {
+	display: flex;
+}
+
+
+.outputName {
+	font-size: 50px;
+	font-family: 'Poppins-ExtraBoldItalic', Arial, sans-serif;
+}
+
+.resultOutput {
+	font-family: 'Poppins-ExtraBoldItalic', Arial, sans-serif;
+	font-size: 60px;
+	margin-right: 10px;
+	color: hsl(259, 100%, 65%);
+	font-weight: bold;
+	font-style: italic;
+}
+
+@media only screen and (max-width: 1024px){
+	button:hover {
+		background-color: hsl(259, 100%, 65%);
+	}
+}
